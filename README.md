@@ -22,7 +22,7 @@ module "efs" {
   source = "github.com/feedyard/tf_aws_efs"
 
   creation_token = "my-efs"
-  performance_mode = "gmaxIO"
+  performance_mode = "generalPerformance"
 
   subnet_id = "subnet-c77b17c2"
   security_groups ["sg-1aaaa065","sg-1a38ab22"]

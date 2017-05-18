@@ -10,7 +10,5 @@ resource "aws_efs_mount_target" "mod" {
   subnet_id      = "${var.subnet_id}"
   ip_address     = "${var.ip_address}"
 
-  security_groups = ["${var.security_groups[count.index]}"]
-
-  count             = "${length(var.security_groups)}"
+  security_groups = ["${var.security_groups}"]
 }
