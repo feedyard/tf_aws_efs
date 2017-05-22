@@ -1,7 +1,7 @@
 efs terraform module
 ===========
 
-A terraform module to provide a VPC in AWS.
+A terraform module to create an EFS file system mount in AWS.
 
 
 Module Input Variables
